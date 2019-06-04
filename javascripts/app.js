@@ -47,7 +47,7 @@ function moveForward(rover){
   console.log("moveForward was called");
   switch(rover["direction"]){
     case "N":
-      rover["y"] += 1;
+      rover["y"] -= 1;
       rover["travelLog"].push([rover["x"],rover["y"]]);
       break;
     case "E":
@@ -55,7 +55,7 @@ function moveForward(rover){
       rover["travelLog"].push([rover["x"],rover["y"]]);
       break;
     case "S":
-      rover["y"] -= 1;
+      rover["y"] += 1;
       rover["travelLog"].push([rover["x"],rover["y"]]);
       break;
     case "W":
